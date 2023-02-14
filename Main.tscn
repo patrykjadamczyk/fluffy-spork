@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://bt66wdqf4cmlw"]
+
+[ext_resource type="Environment" uid="uid://dmjjewiau0w3t" path="res://Env.tres" id="1_j5seo"]
+[ext_resource type="PackedScene" uid="uid://bvbcobtphep3o" path="res://UI.tscn" id="2_duu4s"]
+
+[node name="Main" type="Node3D"]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+environment = ExtResource("1_j5seo")
+
+[node name="App" parent="." instance=ExtResource("2_duu4s")]
